@@ -53,9 +53,9 @@
         name: mysql
         state: installed
 
-    - name: Install python3-PyMySQL.noarch
+    - name: Install Python Library python3-PyMySQL.noarch
       ansible.builtin.dnf:
-        name: python3-PyMySQL.noarch
+        name: python3-PyMySQL
         state: installed
 
     - name: Load Schema
