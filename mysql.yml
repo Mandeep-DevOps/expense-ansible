@@ -1,8 +1,0 @@
-component=frontend
-source common.sh
-
-Head "Install Nginx"
-dnf install nginx -y &>>$log_file
-Stat $?
-
-Head "Copy Expense Config File"
