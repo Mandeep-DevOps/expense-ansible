@@ -6,6 +6,9 @@
     - name: Disable MySQL Module Default Version
       ansible.builtin.shell: dnf module disable mysql -y
 
+    - name: Assigning task to the root user
+      ansible.builtin.shell: sudo -i
+
     - name: Copy MySQL Repo file
       ansible.builtin.copy:
         src: mysql.repo
