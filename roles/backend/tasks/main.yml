@@ -1,5 +1,5 @@
 - name: Disable Default Version of NodeJS
-  ansible.builtin.shell:
+  shell:
    cmd: dnf module disable nodejs -y
 
 - name: Enable NodeJS18 Version
