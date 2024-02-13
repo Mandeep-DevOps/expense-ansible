@@ -12,14 +12,11 @@ pipelines:
         auto_update: true
         branch: main
     stages:
-      - test-stage:
-          fetch_materials: true
-          keep_artifacts: false
-          clean_workspace: false
-          approval:
-            type: manual
-            allow_only_on_success: false
-          jobs:
+    - DEV:
+         fetch_materials: true
+         approval:
+           type: manual
+         jobs:
             deployment:
               timeout: 0
               tasks:
