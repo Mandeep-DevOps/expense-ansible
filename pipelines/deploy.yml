@@ -29,7 +29,7 @@ pipelines:
                     - ansible_user=centos
                     - -e
                     - ansible_password=DevOps321
-                    - expense.yml
+                    - main.yml
 
     - QA:
         fetch_materials: true
