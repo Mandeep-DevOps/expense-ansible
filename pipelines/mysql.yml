@@ -24,7 +24,7 @@ pipelines:
                     command: ansible-playbook
                     arguments:
                       - -i
-                      - fronted.mandeepdevops.online
+                      - mysql.mandeepdevops.online
                       - -e
                       - ansible_user=centos
                       - -e
